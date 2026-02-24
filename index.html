@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="progress-bar"></div>
+    
+    <nav class="navbar">
+        <div class="logo">Isabelle Costa.</div>
+        <ul class="nav-links">
+            <li><a href="#home" data-i18n="navHome">Início</a></li>
+            <li><a href="#about" data-i18n="navAbout">Sobre mim</a></li>
+            <li><a href="#projects" data-i18n="navSkills">Projetos</a></li>
+            <li><a href="#services" data-i18n="navProjects">Serviços</a></li>
+            <li><a href="#contact" data-i18n="navContact">Contato</a></li>
+            <button id="theme-toggle" aria-label="Alternar tema">☽</button>
+
+            <div class="language-switcher">
+                <button onclick="changeLanguage('pt')" class="lang-btn active"> PT </button>
+                <span> | </span>
+                <button onclick="changeLanguage('en')" class="lang-btn"> ENG </button>
+            </div>
+        </ul>
+    </nav>
+
+    <section id="home" class="section fade-in">
+        <div class="hero-content">
+            <h1 data-i18n="heroName">Olá, eu sou a Isabelle</h1>
+            <p data-i18n="heroRole">Desenvolvedora • Designer • Tradutora</p>
+            <a href="#about" class="btn-primary" data-i18n="heroButton">Conheça o meu trabalho!</a>
+        </div>
+    </section>
+
+    <section id="about" class="section fade-in">
+        <h2 data-i18n="aboutTitle">Sobre mim</h2>
+        <div class="about-container">
+            <div class="bio">
+                <p class="about-text" data-i18n="aboutText">Acredito que a tecnologia e o design devem caminhar juntos para
+                criar experiências que não apenas funcionam, mas encantam.
+                Como desenvolvedora com olhar de designer e sensibilidade linguística, eu não apenas
+                crio sites; eu crio experiências acessíveis e compreensíveis para diferentes culturas.
+                Acredito que um bom código precisa de um design funcional e de uma comunicação clara.
+                Sou apaixonada por criar experiências digitais que unem funcionalidade e beleza.</p>
+            </div>
+            <div class="quote-container fade-in">
+    <blockquote data-i18n="heroQuote">Menos é mais.</blockquote>
+    <cite>— Steve Jobs.</cite>
+</div>
+
+<div class="timeline fade-in">
+    <div class="timeline-item">
+        <div class="timeline-date" data-i18n="">Formação</div>
+        <div class="timeline-content">
+            <h3 data-i18n="courseTitle">Análise e Desenvolvimento de Sistemas</h3>
+            <p data-i18n="courseP">ETEC de Sapopemba — Conclusão em Junho 2026</p>
+        </div>
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-date">Cursos complementares</div>
+        <div class="timeline-content">
+            <h3 data-i18n="courseSecondTitle">Inglês</h3>
+            <p data-i18n="courseSecondP">Loyalty Idiomas — 2023-2024</p>
+        </div>
+    </div>
+</div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3 data-i18n="skillT1">Tecnologia</h3>
+                    <div class="skill-details" data-i18n="skillD1">HTML5, CSS3, JS, React e Git.</div>
+                </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skillT2">Design</h3>
+                    <div class="skill-details" data-i18n="skillD2">Figma, Canva, Illustrator/Photoshop, UI/UX e Prototipagem.</div>
+                </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skillT3">Tradução</h3>
+                    <div class="skill-details" data-i18n="skillD3">Inglês fluente, comunicação assertiva e análise crítica.</div>
+                </div>
+                <div class="skill-card">
+                    <h3 data-i18n="skillT4">Soft</h3>
+                    <div class="skill-details" data-i18n="skillD4">Atenção aos detalhes, aprendizado contínuo e foco em resultado.</div>
+                </div>
+            </div>
+        </div>
+
+    <div class="about-action">
+    <a href="#projects" class="btn-secondary">Projetos em destaque</a>
+    </div>
+
+</section> 
+
+<section id="projects" class="section fade-in">
+    <h2 data-i18n="projTitle2">Meus projetos</h2>
+        <br>
+    <div class="projects-container">
+    <div class="project-card">
+        <div class="project-header">
+            <h3><a href="#" target="_blank" data-i18n="proj1Title">Nome do Projeto 1</a></h3>
+        </div>
+        <div class="project-image">
+            <img src="link-da-imagem-1.jpg" alt="Capa do Projeto 1">
+        </div>
+        <div class="project-body">
+            <p data-i18n="proj1Desc">Descrição do primeiro projeto.</p>
+            <div class="project-footer">
+                <a href="#" class="btn-small" data-i18n="btnView">Ver projeto</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-header">
+            <h3><a href="#" target="_blank" data-i18n="proj2Title">Nome do Projeto 2</a></h3>
+        </div>
+        <div class="project-image">
+            <img src="link-da-imagem-2.jpg" alt="Capa do Projeto 2">
+        </div>
+        <div class="project-body">
+            <p data-i18n="proj2Desc">Descrição do segundo projeto.</p>
+            <div class="project-footer">
+                <a href="#" class="btn-small" data-i18n="btnView">Ver projeto</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="projects-action">
+        <a href="#services" class="btn-secondary" data-i18n="btnServ">Ver serviços</a>
+    </div>
+</section>
+
+    <section id="services" class="section fade-in">
+    <h2 data-i18n="servicesTitle">Como posso te ajudar?</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-card">
+            <span class="icon">⌨</span>
+            <h3 data-i18n="serviceDev">Desenvolvimento Web</h3>
+            <p data-i18n="serviceDevDesc">Criação de sites responsivos, modernos e otimizados.</p>
+        </div>
+            <span class="icon">✍︎</span>
+            <h3 data-i18n="serviceDesign">UI/UX Design</h3>
+            <p data-i18n="serviceDesignDesc">Interfaces intuitivas e protótipos de alta fidelidade que encantam o usuário.</p>
+        </div>
+        <div class="service-card">
+            <span class="icon">🗪</span>
+            <h3 data-i18n="serviceTrans">Tradução</h3>
+            <p data-i18n="ServiceTransDesc">Localização de softwares e conteúdos técnicos para uma comunicação global autêntica.</p>
+        </div>
+    </div>
+
+    <br>
+
+<section class="workflow">
+    <h2 data-i18n="workflowTitle">Como eu trabalho</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="circle">1</div>
+            <div class="content">
+                <h5 data-i18n="workflowDesc1">Briefing & Estratégia</h5>
+                <p data-i18n="workflowP1">Conversamos para entender seus objetivos, público-alvo e a essência da sua marca.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="circle">2</div>
+            <div class="content">
+                <h5 data-i18n="workflowDesc2">Design & Prototipagem</h5>
+                <p data-i18n="workflowP2">Criação do layout visual no Figma, focando em estética moderna e experiência do usuário.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="circle">3</div>
+            <div class="content">
+                <h5 data-i18n="workflowDesc3">Desenvolvimento</h5>
+                <p data-i18n="workflowP3">Transformação do design em código limpo, responsivo e otimizado para os navegadores.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <br>
+        <a href="#contact" class="btn-secondary" data-i18n="contactGet">Entre em Contato</a>
+
+</section>
+
+    <section id="contact" class="section fade-in">
+        <h2 data-i18n="contactTitle">Vamos conversar!</h2>
+        <p class="about-text" data-i18n="contactAbout">Gostou do meu trabalho? Adoraria ouvir sobre seus novos projetos ou apenas trocar experiências sobre o mercado.
+            Se você busca uma profissional dedicada a cuidar de cada detalhe, sinta-se à vontade para me enviar uma mensagem.
+            Responderei o mais breve possível!</p>
+        <div class="contact-links">
+            <a href="mailto:seuemail@email.com" class="btn-primary" data-i18n="contactSend">Enviar Email</a>
+            <a href="#" class="btn-outline">LinkedIn</a>
+        </div>
+
+            <div class="contact-wrapper">
+    <div class="faq-section">
+        <h3>Dúvidas Frequentes</h3>
+        <br>
+        <details>
+            <summary>Você trabalha como freelancer?</summary>
+            <p>Sim! Estou aberta a projetos pontuais e colaborações.</p>
+        </details>
+        <details>
+            <summary>Qual seu prazo médio de entrega?</summary>
+            <p>Depende do projeto, mas geralmente entre 2 a 4 semanas.</p>
+        </details>
+    </div>
+
+    <div class="social-footer-links">
+        <a href="https://www.linkedin.com/in/isabelle-costa" class="social-icon">LinkedIn</a>
+        <a href="#" class="social-icon">Email</a>
+        <a href="#" class="social-icon">Instagram</a>
+    </div>
+</div>
+
+    </section>
+
+<footer>
+        <p>&copy; Isabelle Costa Peres Sobrinho, 2026.</p>
+        <br>
+    </footer>
+
+    <a href="https://wa.me/11951737012" class="whatsapp-float" target="_blank">
+        <span class="icon">🗪</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
